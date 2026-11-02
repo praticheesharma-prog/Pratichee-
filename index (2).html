@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pratichee Sharma · Hindi Language Educator</title>
+<meta name="description" content="Pratichee Sharma, Hindi Language Educator at Anandi School, Bengaluru. IB MYP & PYP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Mukta:wght@300;400;600;700&display=swap">
+<!--
+  HOW TO EDIT
+  - Text: search this file for the words you want to change and edit them.
+  - Photos: put your photos in a folder called "images" next to this file, using these names:
+      images/portrait.jpg     (Home, next to the headline)
+      images/classroom-1.jpg  (My Classroom)
+      images/classroom-2.jpg  (My Classroom)
+      images/stage.jpg        (Beyond the Classroom)
+    Until a photo is added, a soft placeholder shows instead.
+  - Goal progress: search for "PROGRESS" to add a line under each goal.
+  - Show one page only (for embedding in a Google Sites page): add ?page=NAME to the link, where NAME is
+      home, classroom, voices, goals, growth or beyond
+    e.g. https://YOURNAME.github.io/pratichee/?page=goals
+-->
+<style>
+:root{
+  --paper:#F5F4F8; --sheet:#FFFFFF; --ink:#1C1F3D; --muted:#5D6080; --line:#DDDCE8;
+  --neel:#2B3A8C; --haldi:#E2A41A; --haldi-ink:#9A6A00; --haldi-soft:#FBF0D3; --neel-soft:#E9EBF7;
+  --night:#1A1E45; --night-ink:#F2EFE6; --night-muted:#B4B6D6; --night-line:#343A6E;
+  --display:"Tiro Devanagari Hindi","Noto Serif Devanagari",Georgia,serif;
+  --body:"Mukta","Noto Sans Devanagari",system-ui,sans-serif;
+  --gutter:max(20px,5vw);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;color-scheme:light}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1}
+p{margin:0}
+a{color:var(--neel)}
+a:focus-visible{outline:2px solid var(--haldi);outline-offset:3px}
+.label{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:var(--gutter)}
+.eyebrow{display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:32px;height:2px;background:var(--haldi)}
+em{font-style:italic}
+.lead{font-family:var(--display);font-size:clamp(20px,2.2vw,23px);line-height:1.55}
+.stack{display:flex;flex-direction:column;gap:18px}
+
+/* Header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(245,244,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:16px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-size:23px;text-decoration:none;color:var(--ink)}
+nav.menu{display:flex;gap:22px;flex-wrap:wrap}
+nav.menu a{font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav.menu a:hover{color:var(--neel)}
+
+/* Epigraph bands */
+.epi{background:var(--night);color:var(--night-ink);position:relative;overflow:hidden}
+.epi .wrap{padding-block:56px;position:relative;z-index:1;display:flex;flex-direction:column;gap:10px}
+.epi::after{content:attr(data-glyph);position:absolute;right:2vw;top:50%;transform:translateY(-52%);font-family:var(--display);
+  font-size:clamp(170px,24vw,300px);line-height:1;color:var(--night-line);pointer-events:none}
+.epi .dev{font-family:var(--display);font-size:clamp(30px,4.4vw,48px);color:var(--haldi);line-height:1.25;max-width:22ch}
+.epi .tr{font-family:var(--display);font-style:italic;font-size:20px}
+.epi .src{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--night-muted)}
+
+section.block{padding-block:clamp(56px,8vw,96px)}
+section.block + section.block{border-top:1px solid var(--line)}
+.sec-title{font-size:clamp(32px,4.4vw,48px)}
+.sec-title em{color:var(--neel)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(32px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(44px,6.6vw,76px);line-height:1.02}
+.hero h1 em{color:var(--neel)}
+.hero p.kicker{color:var(--muted);max-width:52ch;font-size:19px}
+.photo{position:relative;border-radius:14px;overflow:hidden;background:repeating-linear-gradient(135deg,var(--neel-soft) 0 14px,var(--sheet) 14px 28px);border:1px solid var(--line)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo.portrait{aspect-ratio:4/5}
+.photo.wide{aspect-ratio:16/10}
+.photo .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--muted);font-size:14px}
+.hero .photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--haldi)}
+
+/* About */
+.about{display:grid;grid-template-columns:.9fr 1.3fr;gap:clamp(32px,5vw,72px);align-items:start}
+.about .txt{display:flex;flex-direction:column;gap:18px;max-width:64ch;min-width:0}
+.about .txt p:not(.lead){color:var(--ink)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:22px 18px;margin-top:8px}
+.stat{border-top:2px solid var(--haldi);padding-top:12px;display:flex;flex-direction:column;gap:4px}
+.stat b{font-family:var(--display);font-weight:400;font-size:42px;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:14px;color:var(--muted)}
+.pull{border-left:3px solid var(--haldi);padding:4px 0 4px 20px;margin-top:6px}
+.pull .dev{font-family:var(--display);font-size:24px;color:var(--neel)}
+.pull p{font-size:15.5px;color:var(--muted)}
+
+/* Beliefs */
+.beliefs-band{background:var(--night);color:var(--night-ink)}
+.beliefs-band .label{color:var(--night-muted)}
+.beliefs-band .sec-title{color:var(--night-ink)}
+.beliefs-band .sec-title em{color:var(--haldi)}
+.beliefs{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--night-line);margin-top:36px}
+.belief{padding:32px 32px 36px 0;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--night-line)}
+.belief:nth-child(odd){border-right:1px solid var(--night-line)}
+.belief:nth-child(even){padding-left:32px;padding-right:0}
+.belief .dev{font-family:var(--display);font-size:32px;color:var(--haldi);line-height:1.2}
+.belief h3{font-size:25px;color:var(--night-ink)}
+.belief p{color:var(--night-muted);font-size:16.5px;max-width:52ch}
+
+/* Journey */
+.journey{margin-top:32px}
+.stop{display:grid;grid-template-columns:160px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line)}
+.stop:last-child{border-bottom:1px solid var(--line)}
+.stop .yr{color:var(--muted);font-variant-numeric:tabular-nums}
+.stop h4{font-size:19px;font-weight:600}
+.stop p{color:var(--muted);font-size:16px}
+.stop.now .yr{color:var(--neel);font-weight:600}
+
+/* Cards */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:var(--sheet);border:1px solid var(--line);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.card .dev{font-family:var(--display);color:var(--haldi-ink);font-size:22px}
+.card h3{font-size:25px}
+.card p{color:var(--muted);font-size:16.5px}
+.intro2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:end;margin-bottom:40px}
+
+/* Voices */
+.ba{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:stretch;margin-block:36px}
+.ba > div{background:var(--sheet);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.ba > div p{font-family:var(--display);font-size:21px;line-height:1.45}
+.ba .arrow{align-self:center;font-size:32px;color:var(--haldi);background:none;border:none;padding:0}
+.ba .now{background:var(--haldi-soft);border-color:var(--haldi)}
+.quotes{columns:2;column-gap:22px}
+blockquote{break-inside:avoid;margin:0 0 22px;padding:26px 28px;background:var(--neel-soft);border-radius:12px;display:flex;flex-direction:column;gap:12px}
+blockquote::before{content:"“";font-family:var(--display);font-size:72px;line-height:.55;color:var(--haldi);height:26px}
+blockquote p{font-family:var(--display);font-size:20px;line-height:1.5}
+blockquote cite{font-style:normal;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Goals */
+.goals{display:flex;flex-direction:column;gap:22px;margin-top:36px}
+.goal{background:var(--sheet);border:1px solid var(--line);border-radius:12px;padding:30px;display:grid;grid-template-columns:64px 1fr;gap:6px 20px}
+.goal .gn{font-family:var(--display);color:var(--haldi);font-size:46px;line-height:1;grid-row:span 4}
+.goal h3{font-size:26px}
+.goal .why{font-family:var(--display);font-style:italic;color:var(--neel);font-size:19px}
+.goal p.body{font-size:16.5px;color:var(--ink);max-width:72ch}
+.goal .progress{font-size:15.5px;background:var(--haldi-soft);border-left:3px solid var(--haldi);padding:8px 14px;border-radius:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chip{font-size:13px;padding:3px 11px;border-radius:999px;background:var(--neel-soft);color:var(--neel)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--sheet);margin-top:20px}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15px}
+th,td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--paper)}
+td:first-child{font-weight:600;width:190px}
+tr:last-child td{border-bottom:none}
+td.empty{color:var(--muted)}
+.impact{margin-top:40px}
+
+/* Growth */
+.list{display:flex;flex-direction:column}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line);flex-wrap:wrap}
+.row:last-child{border-bottom:1px solid var(--line)}
+.pill{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:2px 11px;border-radius:999px;background:#E1F1E7;color:#2F7D4F;align-self:center}
+
+/* Footer */
+footer{background:var(--night);color:var(--night-ink)}
+footer .wrap{padding-block:56px;display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:end}
+footer .dev{font-family:var(--display);font-size:34px;color:var(--haldi)}
+footer a{color:var(--night-ink)}
+footer .label{color:var(--night-muted)}
+footer .contact{display:flex;flex-direction:column;gap:6px}
+
+/* Single-page embed mode (?page=...) */
+body.single header.top, body.single footer{display:none}
+body.single [data-page]{display:none}
+body.single [data-page].show{display:block}
+
+@media (max-width:860px){
+  .hero,.about,.grid2,.intro2,.beliefs{grid-template-columns:1fr}
+  .belief,.belief:nth-child(even){padding:26px 0;border-right:none}
+  .belief:nth-child(odd){border-right:none}
+  .stop{grid-template-columns:1fr;gap:2px}
+  .ba{grid-template-columns:1fr}.ba .arrow{transform:rotate(90deg);justify-self:center}
+  .quotes{columns:1}
+  .goal{grid-template-columns:1fr}.goal .gn{grid-row:auto}
+  nav.menu{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home">Pratichee Sharma</a>
+    <nav class="menu">
+      <a href="#about">About</a><a href="#beliefs">Beliefs</a><a href="#classroom">Classroom</a><a href="#voices">Voices</a><a href="#goals">Goals</a><a href="#growth">Growth</a><a href="#beyond">Beyond</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<div data-page="home">
+  <div class="epi" data-glyph="अ"><div class="wrap">
+    <div class="dev">सा विद्या या विमुक्तये</div>
+    <div class="tr">That alone is knowledge which sets us free.</div>
+    <div class="src">Vishnu Purana</div>
+  </div></div>
+
+  <section class="block" id="home"><div class="wrap hero">
+    <div class="stack">
+      <div class="label">Hindi Language Educator · IB MYP &amp; PYP · Anandi School, Bengaluru</div>
+      <h1>Every language begins with <em>अ</em>. Every child begins somewhere.</h1>
+      <p class="kicker">Many of my learners meet Hindi as a new language. Some arrive unable to write a single letter. I walk with them from that first अ to the day they can tell their own story in Hindi, and hear themselves in it.</p>
+    </div>
+    <div class="photo portrait"><img src="images/portrait.jpg" alt="Pratichee Sharma" data-ph="Add your photo as images/portrait.jpg"></div>
+  </div></section>
+
+  <section class="block" id="about"><div class="wrap about">
+    <div class="stack">
+      <div class="eyebrow label">परिचय · About me</div>
+      <h2 class="sec-title">A language is a way of <em>seeing</em></h2>
+      <div class="stats">
+        <div class="stat"><b>8+</b><span>years teaching Hindi</span></div>
+        <div class="stat"><b>1–8</b><span>grades taught at Anandi</span></div>
+        <div class="stat"><b>~30%</b><span>rise in student engagement at Kunskapsskolan</span></div>
+        <div class="stat"><b>100+</b><span>students in cultural events I led</span></div>
+      </div>
+      <div class="pull"><div class="dev">हिन्दी · संस्कृतम् · English</div><p>The three languages I live and work in</p></div>
+    </div>
+    <div class="txt">
+      <p class="lead">I grew up with Hindi as the language of home, stories and song, and with Sanskrit (संस्कृतम्) beneath it, in shlokas, prayers and the roots of the words we use every day.</p>
+      <p>Somewhere along the way I understood that a language is much more than grammar. It carries a way of looking at the world, a way of belonging to people, and a way of being heard. When a child learns Hindi, they are also learning that their voice has a place.</p>
+      <p>Our tradition calls sound sacred: नाद ब्रह्म. I trained as a Hindustani classical vocalist, and music taught me what the classroom later confirmed. Learning begins with listening. A child must first feel safe enough to be heard before they will risk speaking.</p>
+      <p>For more than eight years I have taught Hindi in Panipat, Gurgaon and now Bengaluru, mostly to children for whom it is an additional language. At Kunskapsskolan I worked with colleagues in Sweden on the KED framework, where every student sets their own goals and walks with a coach. At Anandi I teach Hindi from Grade 1 to Grade 8, lead Anandi Srijan for MYP, and have recently been selected to teach in the IB Diploma Programme.</p>
+      <p>My favourite moment in any class is quiet and small. A child who once struggled to write a single letter stands up and speaks in Hindi without being asked. That moment is why I teach.</p>
+    </div>
+  </div></section>
+
+  <section class="block beliefs-band" id="beliefs"><div class="wrap">
+    <div class="eyebrow label">मेरी सोच · What I believe</div>
+    <h2 class="sec-title" style="margin-top:16px">Four beliefs I carry into <em>every</em> classroom</h2>
+    <div class="beliefs">
+      <div class="belief"><span class="dev">भाषा सबकी है</span><h3>Language belongs to everyone</h3><p>No child stands outside a language. Some are only at its doorstep. I teach in phases so that the beginner and the fluent speaker in the same room both cross a threshold each term, and I keep evidence of it, because hope alone is not enough.</p></div>
+      <div class="belief"><span class="dev">पहले सुनो</span><h3>Listening comes before speaking</h3><p>Music taught me that every voice begins in silence. I make room for that silence. A classroom where children feel heard is one where they will dare to speak, sing, act and make mistakes out loud.</p></div>
+      <div class="belief"><span class="dev">करके सीखो</span><h3>We become what we practise</h3><p>A word memorised for a test fades. A word used to run a campaign, perform a play or teach a younger child stays. My students use Hindi to do real things, and that is how it becomes theirs.</p></div>
+      <div class="belief"><span class="dev">स्वयं को जानो</span><h3>Reflection is how we meet ourselves</h3><p>At the end of every unit, students write what they did not know before, what they know now, what gave them joy and where they will go next. In naming their own growth, they learn to own it.</p></div>
+    </div>
+  </div></section>
+
+  <section class="block" id="journey"><div class="wrap">
+    <div class="eyebrow label">मेरी यात्रा · My journey</div>
+    <h2 class="sec-title" style="margin-top:16px">From Panipat to Bengaluru, <em>one</em> language</h2>
+    <div class="journey">
+      <div class="stop now"><div class="yr">Now</div><div><h4>Anandi School, Bengaluru</h4><p>Hindi Teacher, Grades 1–8 (IB MYP Language Acquisition) · Lead, Anandi Srijan (MYP) · Selected for IBDP</p></div></div>
+      <div class="stop"><div class="yr">2019 – 2023</div><div><h4>Kunskapsskolan International School, Gurgaon</h4><p>Base Group Coach &amp; Hindi Language Educator, Middle Years</p></div></div>
+      <div class="stop"><div class="yr">2018 – 2019</div><div><h4>Heritage Xperiential Learning School, Gurgaon</h4><p>Hindi Language Teacher, Middle Years</p></div></div>
+      <div class="stop"><div class="yr">2016</div><div><h4>Kunskapsskolan, Gurgaon</h4><p>Base Group Coach &amp; Hindi Language Educator, Primary Years</p></div></div>
+      <div class="stop"><div class="yr">2011 – 2013</div><div><h4>S.D.V.M School, Panipat</h4><p>Hindi Teacher</p></div></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= CLASSROOM ================= -->
+<div data-page="classroom">
+  <div class="epi" data-glyph="क" id="classroom"><div class="wrap">
+    <div class="dev">विद्या ददाति विनयम्</div>
+    <div class="tr">Knowledge gives humility.</div>
+    <div class="src">Hitopadesha</div>
+  </div></div>
+  <section class="block"><div class="wrap">
+    <div class="intro2">
+      <div class="stack">
+        <div class="eyebrow label">कक्षा · In my classroom</div>
+        <h2 class="sec-title">One language, <em>eight years</em> of a child's life</h2>
+      </div>
+      <div class="stack">
+        <p class="lead">I am the only Hindi teacher at Anandi, so I meet every learner from Grade 1 to Grade 8.</p>
+        <p>That is a rare gift. I can design one connected journey through the language and watch a child grow along it, year after year: the six-year-old tracing her first अक्षर becomes the thirteen-year-old writing a speech for her campaign.</p>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="card"><span class="dev">चरण</span><h3>A curriculum built in phases</h3><p>I designed a phase-based Hindi curriculum for Grades 1–8, so each learner is taught at the stage they have reached, not the one their age assumes. Children who start with little or no Hindi get a clear path forward. This year I track every learner against the phase descriptors after each unit.</p></div>
+      <div class="card"><span class="dev">सहारा</span><h3>A scaffold for every learner</h3><p>Tiered tasks, scaffolds, speaking supports and stretch options mean that every child in the room has work that fits them. I am gathering these strategies into a toolkit so colleagues can use them too.</p></div>
+      <div class="card"><span class="dev">कला</span><h3>Learning through art and action</h3><p>Students learn through theatre, storytelling and music, and through projects with a real audience, such as the healthy-living campaign <em>Svasth Jeevan Abhiyaan</em> and the hands-on kits they made in Unit 1.</p></div>
+      <div class="card"><span class="dev">सृजन</span><h3>Anandi Srijan (MYP)</h3><p><em>Srijan</em> means creation. I lead Anandi Srijan for MYP, guiding students as they build portfolios that show who they are becoming. This year I am setting clear guidelines and structured feedback for every student.</p></div>
+    </div>
+    <div class="grid2" style="margin-top:22px">
+      <div class="photo wide"><img src="images/classroom-1.jpg" alt="Students during the Svasth Jeevan Abhiyaan campaign" data-ph="Add images/classroom-1.jpg"></div>
+      <div class="photo wide"><img src="images/classroom-2.jpg" alt="Student kits, portfolios or a class performance" data-ph="Add images/classroom-2.jpg"></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= VOICES ================= -->
+<div data-page="voices">
+  <div class="epi" data-glyph="स्व" id="voices"><div class="wrap">
+    <div class="dev">जब बच्चा अपने शब्द पाता है, वह स्वयं को पाता है।</div>
+    <div class="tr">When a child finds their words, they find themselves.</div>
+  </div></div>
+  <section class="block"><div class="wrap">
+    <div class="intro2">
+      <div class="stack">
+        <div class="eyebrow label">विद्यार्थियों की आवाज़ · Student voices</div>
+        <h2 class="sec-title">In my students' <em>own</em> words</h2>
+      </div>
+      <p>A reflection is a small mirror. At the end of Unit 1, students held one up to themselves on Padlet, using four prompts: <em>Before, I didn't know…</em>, <em>Now I know…</em>, <em>What I enjoyed…</em> and <em>My next step…</em>. These are some of the things they saw.</p>
+    </div>
+    <div class="label">One learner, one unit</div>
+    <div class="ba">
+      <div><span class="label">Before, I didn't know…</span><p>"How to read, how to write a single letter, and how to speak more than 3 sentences."</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="now"><span class="label">Now I know…</span><p>"How to read, how to write over 10 sentences just in परिचय, and speak more than 10 sentences."</p></div>
+    </div>
+    <div class="quotes">
+      <blockquote><p>I learned how to express my ideas and go deeper into understanding Hindi and not just memorising from textbooks.</p><cite>Student · Now I know</cite></blockquote>
+      <blockquote><p>I really enjoyed doing our healthy life campaign (svasth jeevan abhiyaan)… I also felt satisfied when people began noticing our campaign and applying it in their life.</p><cite>Student · What I enjoyed</cite></blockquote>
+      <blockquote><p>Staying healthy is not limited to physical health, but includes mental and emotional health too. I learned how to apply healthy habits in my life and to educate others about it too.</p><cite>Student · Now I know</cite></blockquote>
+      <blockquote><p>I love coming to Hindi class… I also liked my portfolio project, how I drew in it and wrote different things. I loved how I learned to express ideas.</p><cite>Student · What I enjoyed</cite></blockquote>
+      <blockquote><p>I think I enjoyed making the kit, because it felt crafty and kind of fun, but with a bit of learning.</p><cite>Student · What I enjoyed</cite></blockquote>
+      <blockquote><p>My next step is to work on my grammar… My goal is to get achievement level 7 in the next SA by improving in these concepts.</p><cite>Student · My next step</cite></blockquote>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= GOALS ================= -->
+<div data-page="goals">
+  <div class="epi" data-glyph="च" id="goals"><div class="wrap">
+    <div class="dev">चरैवेति चरैवेति</div>
+    <div class="tr">Keep walking, keep walking.</div>
+    <div class="src">Aitareya Brahmana</div>
+  </div></div>
+  <section class="block"><div class="wrap">
+    <div class="intro2">
+      <div class="stack">
+        <div class="eyebrow label">लक्ष्य · Professional goals 2026–27</div>
+        <h2 class="sec-title">From my classroom to the <em>whole</em> school</h2>
+      </div>
+      <div class="stack">
+        <p class="lead">I ask my students to name where they are and where they will go next. These goals are my own answer to the same question.</p>
+        <p>This year I want to work more systematically: planning around learner phases, gathering evidence of progress, inviting others to check my judgements, and sharing what works so it reaches more classrooms than mine.</p>
+      </div>
+    </div>
+
+    <div class="goals">
+      <article class="goal">
+        <span class="gn">१</span>
+        <h3>Phase-based Hindi curriculum in practice and learner progress</h3>
+        <p class="why">A curriculum on paper is a promise. This goal asks whether it keeps that promise to every child.</p>
+        <p class="body">By the end of Unit 5, I will implement the phase-based Hindi curriculum across Grades 1–8 and evaluate its impact on learner progress through tracking data, work samples and student feedback, with Grades 6 and 7 as an in-depth sample. I will document refinements after each unit and present a short summary of findings and recommendations.</p>
+        <div class="chips"><span class="chip">Student work</span><span class="chip">Progress data</span><span class="chip">Planning</span><span class="chip">Student feedback</span><span class="chip">Reflection</span></div>
+        <!-- PROGRESS: remove the two dashes-and-arrows around the line below and write your update -->
+        <!-- <p class="progress"><b>Progress so far:</b> write your update here.</p> -->
+      </article>
+      <article class="goal">
+        <span class="gn">२</span>
+        <h3>Differentiation as shared practice</h3>
+        <p class="why">What helps one child find their footing in a new language can help children in every classroom.</p>
+        <p class="body">By the end of Unit 5, I will document my differentiation strategies for new language learners (tiered tasks, scaffolds, stretch options and speaking supports) as a short toolkit and share it with colleagues in at least two sessions, using their feedback to refine it.</p>
+        <div class="chips"><span class="chip">Toolkit</span><span class="chip">Session notes</span><span class="chip">Peer feedback</span><span class="chip">Student work</span></div>
+        <!-- PROGRESS: <p class="progress"><b>Progress so far:</b> write your update here.</p> -->
+      </article>
+      <article class="goal">
+        <span class="gn">३</span>
+        <h3>Leadership of Anandi Srijan (MYP)</h3>
+        <p class="why">A portfolio is a child's story of becoming. Clear guidance helps them tell it well.</p>
+        <p class="body">By the end of Unit 5, I will lead Anandi Srijan for MYP with clear portfolio guidelines and structured feedback for students, and document an evaluation with recommendations for the next cycle.</p>
+        <div class="chips"><span class="chip">Guidelines &amp; checklists</span><span class="chip">Portfolio samples</span><span class="chip">Student feedback</span><span class="chip">Evaluation</span></div>
+        <!-- PROGRESS: <p class="progress"><b>Progress so far:</b> write your update here.</p> -->
+      </article>
+      <article class="goal">
+        <span class="gn">४</span>
+        <h3>Professional learning and moderation for Language Acquisition leadership</h3>
+        <p class="why">As the only Hindi teacher, I need other eyes on my judgements. Good teaching grows in conversation.</p>
+        <p class="body">By the end of Unit 5, I will complete IB professional learning for DP Language Acquisition, take part in at least two moderation or peer-review exchanges on my MYP phase judgements, and write a short MYP-to-DP progression note.</p>
+        <div class="chips"><span class="chip">PD record</span><span class="chip">Moderation exchanges</span><span class="chip">Progression note</span><span class="chip">Reflection</span></div>
+        <!-- PROGRESS: <p class="progress"><b>Progress so far:</b> write your update here.</p> -->
+      </article>
+    </div>
+
+    <div class="label" style="margin-top:48px">Milestones by unit</div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Goal</th><th>Unit 2</th><th>Unit 3</th><th>Unit 4</th><th>Unit 5</th></tr></thead>
+        <tbody>
+          <tr><td>१ · Curriculum &amp; progress</td><td>Baselines, tracker, first review</td><td>Refine using evidence; midpoint review with MYP coordinator</td><td>Refine using evidence</td><td>Impact summary &amp; recommendations</td></tr>
+          <tr><td>२ · Differentiation toolkit</td><td class="empty">—</td><td>Draft toolkit; first session (Unit 3 or 4)</td><td>First session (if not in Unit 3)</td><td>Second session &amp; colleague feedback</td></tr>
+          <tr><td>३ · Anandi Srijan</td><td>Guidelines &amp; checklists in place</td><td>Midpoint review</td><td class="empty">—</td><td>Evaluation &amp; recommendations</td></tr>
+          <tr><td>४ · PD &amp; moderation</td><td class="empty">—</td><td>Choose training; arrange moderation</td><td>Attend training; first moderation</td><td>Second moderation; MYP-to-DP note</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid2 impact">
+      <div class="card"><span class="dev">विद्यार्थी</span><h3>What this means for my students</h3><p>Learners who arrive unable to speak or understand Hindi will move through the phases with visible, documented progress. Students at every level will get tasks and feedback that fit them, and portfolios that show who they are becoming.</p></div>
+      <div class="card"><span class="dev">विद्यालय</span><h3>What this means for Anandi</h3><p>A tested and refined Hindi curriculum for Grades 1–8, a differentiation toolkit colleagues can use, clearer Srijan guidance and a model for moderating language assessment, all in the spirit of Learn by Doing.</p></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= GROWTH ================= -->
+<div data-page="growth">
+  <div class="epi" data-glyph="ज्ञ" id="growth"><div class="wrap">
+    <div class="dev">गुरु भी जीवन भर शिष्य रहता है।</div>
+    <div class="tr">A teacher remains a student all her life.</div>
+  </div></div>
+  <section class="block"><div class="wrap">
+    <div class="intro2">
+      <div class="stack">
+        <div class="eyebrow label">सीखना जारी है · Still learning</div>
+        <h2 class="sec-title">The teacher who keeps <em>learning</em></h2>
+      </div>
+      <div class="stack">
+        <p class="lead">My studies have moved between language and music, and both have taught me patience: a raga, like a language, opens slowly to those who keep returning to it.</p>
+        <p>My next challenge is Language Acquisition leadership: guiding language teaching across programmes and building the path from MYP into the Diploma Programme.</p>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="stack">
+        <div class="label">Education</div>
+        <div class="list">
+          <div class="row"><span>M.A. Hindi · Swami Vivekanand Subharti University</span><span>2020</span></div>
+          <div class="row"><span>M.A. Hindustani Classical Music (Vocal) · Himachal Pradesh University</span><span>2014</span></div>
+          <div class="row"><span>B.Ed. (Hindi) · Kurukshetra University · First Rank, Valedictorian</span></div>
+          <div class="row"><span>B.A. · Kurukshetra University · First Division</span></div>
+        </div>
+      </div>
+      <div class="stack">
+        <div class="label">Professional learning</div>
+        <div class="list">
+          <div class="row"><span>Selected to teach IB Diploma Programme</span><span class="pill">Selected</span></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= BEYOND ================= -->
+<div data-page="beyond">
+  <div class="epi" data-glyph="नाद" id="beyond"><div class="wrap">
+    <div class="dev">नाद ब्रह्म</div>
+    <div class="tr">Sound is the divine.</div>
+    <div class="src">From the Indian musical tradition</div>
+  </div></div>
+  <section class="block"><div class="wrap">
+    <div class="intro2">
+      <div class="stack">
+        <div class="eyebrow label">मंच और कला · Stage and art</div>
+        <h2 class="sec-title">Where Hindi <em>sings</em></h2>
+      </div>
+      <div class="stack">
+        <p class="lead">The stage is a classroom with the walls taken away.</p>
+        <p>Outside the timetable, music, theatre and writing are where I bring Hindi to life for students and for the wider school community. A child who hesitates to read aloud will often find courage in a song or in a character's voice.</p>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="card"><span class="dev">नाटक</span><h3>Student theatre</h3><p>I have scripted and directed student productions that built children's confidence and expression in Hindi.</p></div>
+      <div class="card"><span class="dev">उत्सव</span><h3>Cultural events</h3><p>I have designed and led cultural events with more than 100 students, weaving the performing arts into the curriculum.</p></div>
+      <div class="card"><span class="dev">संगीत</span><h3>Music</h3><p>I am a trained Hindustani classical vocalist and a lead vocalist with live performance experience on cultural and corporate stages.</p></div>
+      <div class="card"><span class="dev">लेखन</span><h3>Writing</h3><p>I am a published writer, with work in literary and academic journals.</p></div>
+    </div>
+    <div class="photo wide" style="margin-top:22px"><img src="images/stage.jpg" alt="A performance or event directed by Pratichee Sharma" data-ph="Add images/stage.jpg"></div>
+  </div></section>
+</div>
+</main>
+
+<footer id="connect">
+  <div class="wrap">
+    <div class="stack" style="gap:6px">
+      <div class="dev">धन्यवाद</div>
+      <div class="label">Thank you for visiting</div>
+    </div>
+    <div class="contact">
+      <div class="label">संपर्क · Connect</div>
+      <a href="mailto:praticheesharma@gmail.com">praticheesharma@gmail.com</a>
+      <a href="https://www.linkedin.com/in/praticheesharma" target="_blank" rel="noopener">linkedin.com/in/praticheesharma</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Photo placeholders: if a photo file isn't there yet, show a soft note instead of a broken image.
+document.querySelectorAll('.photo img').forEach(function(img){
+  function ph(){ var d=document.createElement('div'); d.className='ph'; d.textContent=img.dataset.ph||'Photo'; img.replaceWith(d); }
+  if(img.complete && img.naturalWidth===0) ph(); else img.addEventListener('error', ph);
+});
+// Embed mode: ?page=goals shows only that page (header and footer hidden).
+(function(){
+  var p = new URLSearchParams(location.search).get('page');
+  if(!p) return;
+  var el = document.querySelector('[data-page="'+p+'"]');
+  if(!el) return;
+  document.body.classList.add('single'); el.classList.add('show');
+})();
+</script>
+</body>
+</html>
